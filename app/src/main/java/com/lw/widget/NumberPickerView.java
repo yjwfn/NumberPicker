@@ -137,7 +137,7 @@ public class NumberPickerView extends View {
 
 
             /*
-                越靠近中间的文体越大。
+                越靠近中间的文字越大。
                 distance / (height / 2f) 算出的是递增的0-1之间的。
                 1f - distance / (height / 2f) 将值变为递减1-0之间 。
 
