@@ -499,7 +499,6 @@ public class NumberPickerView extends View {
     }
 
     private int computeMaximumWidth(){
-        Paint.FontMetricsInt    fontMetricsInt = mTextPaint.getFontMetricsInt();
         int result = (int) mTextPaint.measureText("0000");
         int width = 0;
         for(int objIndex =  0; mSelector != null &&  objIndex < mSelector.length; objIndex++){
