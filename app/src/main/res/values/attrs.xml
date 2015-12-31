@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberPickerView">
+        <attr name="numberColorNormal" format="reference|color"></attr>
+        <attr name="numberColorSelected" format="reference|color"></attr>
+        <attr name="numberTextSize" format="reference|dimension"></attr>
+        <attr name="numberPageSize" format="reference|integer"></attr>
+        <attr name="minValue" format="reference|integer"></attr>
+        <attr name="maxValue" format="reference|integer"></attr>
+    </declare-styleable>
+
+</resources>
