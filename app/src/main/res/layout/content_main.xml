@@ -21,7 +21,7 @@
         app:maxValue="2015"
         app:minValue="1993"
         app:numberTextSize="15sp"
-        app:numberPageSize="9"
+        app:numberPageSize="10"
         >
     </com.lw.widget.NumberPickerView>
 

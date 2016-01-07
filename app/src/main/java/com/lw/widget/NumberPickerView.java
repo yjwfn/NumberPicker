@@ -124,7 +124,10 @@ public class NumberPickerView extends View {
         int centerY = getScrollY() + height / 2;
         Rect itemRect = new Rect();
         int selectedPos = computePosition();
-        for(int itemIndex = 0; itemIndex < mSelector.length; itemIndex++){
+        int half = mPageSize / 2 + 1;   //去除已选择的
+        int itemIndex = selectedPos > half ? selectedPos - half : 0;
+        int itemEnd = (selectedPos + half ) <= mSelector.length ? (selectedPos + half) : mSelector.length;
+        for( ; itemIndex < itemEnd; itemIndex++){
 
             itemRect.set(0, itemIndex * itemHeight, width, itemIndex * itemHeight + itemHeight);
            // canvas.drawRect(itemRect, mTextPaint);
